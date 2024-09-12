@@ -1,0 +1,267 @@
+{
+    "deals": [
+        {
+            "deal_id": "7ff715e1",
+            "deal_type": "BEST_DEAL",
+            "deal_title": "Apple AirPods Max Wireless Over-Ear Headphones",
+            "description": "Active Noise Cancelling, Transparency Mode, Personalized Spatial Audio, Dolby Atmos, Bluetooth Headphones for iPhone – Space Gray",
+            "deal_photo": "https://m.media-amazon.com/images/I/81jqUPkIVRL.jpg",
+            "deal_state": "AVAILABLE",
+            "deal_url": "https://www.amazon.com/New-Apple-AirPods-Max-Space/dp/B08PZHYWJS",
+            "canonical_deal_url": "https://www.amazon.com/deal/7ff715e1",
+            "deal_starts_at": "2024-05-09T07:00:00.000Z",
+            "deal_ends_at": "2024-05-24T06:59:59.000Z",
+            "deal_price": {
+              "amount": "449.99",
+              "currency": "USD"
+            },
+            "list_price": {
+              "amount": "549.0",
+              "currency": "USD"
+            },
+            "savings_percentage": 18,
+            "savings_amount": {
+              "amount": "99.01",
+              "currency": "USD"
+            },
+            "deal_badge": "18% off",
+            "type": "SINGLE_ITEM",
+            "product_asin": "B08PZHYWJS"
+          }
+          ,
+          {
+            "deal_id": "ac8aefd1",
+            "deal_type": "BEST_DEAL",
+            "deal_title": "SAMSUNG Galaxy S24 Ultra Cell Phone",
+            "description" :"256GB AI Smartphone, Unlocked Android, 200MP, 100x Zoom Cameras, Long Battery Life, S Pen, US Version, 2024, Titanium Black",
+            "deal_photo": "https://m.media-amazon.com/images/I/71WcjsOVOmL.jpg",
+            "deal_state": "AVAILABLE",
+            "deal_url": "https://www.amazon.com/SAMSUNG-Smartphone-Unlocked-Android-Titanium/dp/B0CMDM65JH",
+            "canonical_deal_url": "https://www.amazon.com/deal/ac8aefd1",
+            "deal_starts_at": "2024-05-06T07:00:00.000Z",
+            "deal_ends_at": "2024-05-10T06:59:59.000Z",
+            "deal_price": {
+              "amount": "1049.99",
+              "currency": "USD"
+            },
+            "list_price": {
+              "amount": "1299.99",
+              "currency": "USD"
+            },
+            "savings_percentage": 19,
+            "savings_amount": {
+              "amount": "250.0",
+              "currency": "USD"
+            },
+            "deal_badge": "19% off",
+            "type": "SINGLE_ITEM",
+            "product_asin": "B0CMDM65JH"
+          },
+          
+          {
+            "deal_id": "6646e8df",
+            "deal_type": "BEST_DEAL",
+            "deal_title": "Apple 2022 MacBook Air",
+            "description":"Laptop with M2 chip: 13.6-inch Liquid Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera. Works with iPhone and iPad; Space Gray",
+            "deal_photo": "https://m.media-amazon.com/images/I/71f5Eu5lJSL.jpg",
+            "deal_state": "AVAILABLE",
+            "deal_url": "https://www.amazon.com/2022-Apple-MacBook-Laptop-chip/dp/B0B3C2R8MP",
+            "canonical_deal_url": "https://www.amazon.com/deal/6646e8df",
+            "deal_starts_at": "2024-05-09T00:00:00.000Z",
+            "deal_ends_at": "2024-05-16T06:59:59.000Z",
+            "deal_price": {
+              "amount": "829.0",
+              "currency": "USD"
+            },
+            "list_price": {
+              "amount": "999.0",
+              "currency": "USD"
+            },
+            "savings_percentage": 17,
+            "savings_amount": {
+              "amount": "170.0",
+              "currency": "USD"
+            },
+            "deal_badge": "17% off",
+            "type": "SINGLE_ITEM",
+            "product_asin": "B0B3C2R8MP"
+          }
+          ,
+          {
+            "deal_id": "35f80eae",
+            "deal_type": "BEST_DEAL",
+            "deal_title": "Beats Studio Buds - True Wireless Noise Cancelling Earbuds",
+            "description":"Compatible with Apple & Android, Built-in Microphone, IPX4 Rating, Sweat Resistant Earphones, Class 1 Bluetooth Headphones - Black",
+            "deal_photo": "https://m.media-amazon.com/images/I/51bRSWrEc7S.jpg",
+            "deal_state": "AVAILABLE",
+            "deal_url": "https://www.amazon.com/Beats-Studio-Cancelling-Earbuds-Built-Bluetooth-Headphones/dp/B096SV8SJG",
+            "canonical_deal_url": "https://www.amazon.com/deal/35f80eae",
+            "deal_starts_at": "2024-05-05T07:00:00.000Z",
+            "deal_ends_at": "2024-05-19T06:59:59.000Z",
+            "deal_price": {
+              "amount": "79.95",
+              "currency": "USD"
+            },
+            "list_price": {
+              "amount": "149.95",
+              "currency": "USD"
+            },
+            "savings_percentage": 47,
+            "savings_amount": {
+              "amount": "70.0",
+              "currency": "USD"
+            },
+            "deal_badge": "47% off",
+            "type": "SINGLE_ITEM",
+            "product_asin": "B096SV8SJG"
+          }
+          ,
+          {
+            "deal_id": "35f80eae",
+            "deal_type": "BEST_DEAL",
+            "deal_title": "Beats Studio Pro - Wireless Bluetooth Noise Cancelling Headphones",
+            "description":"Personalized Spatial Audio, USB-C Lossless Audio, Apple & Android Compatibility, Up to 40 Hours Battery Life - Sandstone",
+            "deal_photo": "https://m.media-amazon.com/images/I/51t0IE0zjaL.jpg",
+            "deal_state": "AVAILABLE",
+            "deal_url": "https://www.amazon.com/Beats-Studio-Pro-Personalized-Compatibility/dp/B0C8PSMPTH",
+            "canonical_deal_url": "https://www.amazon.com/deal/35f80eae",
+            "deal_starts_at": "2024-05-05T07:00:00.000Z",
+            "deal_ends_at": "2024-05-19T06:59:59.000Z",
+            "deal_price": {
+              "amount": "179.99",
+              "currency": "USD"
+            },
+            "list_price": {
+              "amount": "349.99",
+              "currency": "USD"
+            },
+            "savings_percentage": 49,
+            "savings_amount": {
+              "amount": "170.0",
+              "currency": "USD"
+            },
+            "deal_badge": "49% off",
+            "type": "SINGLE_ITEM",
+            "product_asin": "B0C8PSMPTH"
+          }
+          ,
+          {
+            "deal_id": "0f5ab719",
+            "deal_type": "BEST_DEAL",
+            "deal_title": "Skylight Digital Picture Frame",
+            "description":"WiFi Enabled with Load from Phone Capability, Touch Screen Digital Photo Frame Display - Gifts for Mom, Preload Photos Before Gifting - 10 Inch Black",
+            "deal_photo": "https://m.media-amazon.com/images/I/71+UxmhkGvL.jpg",
+            "deal_state": "AVAILABLE",
+            "deal_url": "https://www.amazon.com/Skylight-Frame-Digital-Picture-Anywhere/dp/B01N7ENHO6",
+            "canonical_deal_url": "https://www.amazon.com/deal/0f5ab719",
+            "deal_starts_at": "2024-05-06T07:00:00.000Z",
+            "deal_ends_at": "2024-05-13T06:45:00.000Z",
+            "deal_price": {
+              "amount": "119.99",
+              "currency": "USD"
+            },
+            "list_price": {
+              "amount": "169.99",
+              "currency": "USD"
+            },
+            "savings_percentage": 29,
+            "savings_amount": {
+              "amount": "50.0",
+              "currency": "USD"
+            },
+            "deal_badge": "29% off",
+            "type": "SINGLE_ITEM",
+            "product_asin": "B01N7ENHO6"
+          }
+          ,
+          {
+            "deal_id": "68bdc57e",
+            "deal_type": "BEST_DEAL",
+            "deal_title": "All-new Echo Show 8 (3rd Gen, 2023 release)",
+            "description":"With Spatial Audio, Smart Home Hub, and Alexa | Glacier White",
+            "deal_photo": "https://m.media-amazon.com/images/I/71cJrIMKvPL.jpg",
+            "deal_state": "AVAILABLE",
+            "deal_url": "https://www.amazon.com/All-new-Echo-Show-8/dp/B0BLS3QJTX",
+            "canonical_deal_url": "https://www.amazon.com/deal/68bdc57e",
+            "deal_starts_at": "2024-05-05T04:00:00.000Z",
+            "deal_ends_at": "2024-05-13T03:55:00.000Z",
+            "deal_price": {
+              "amount": "99.99",
+              "currency": "USD"
+            },
+            "list_price": {
+              "amount": "149.99",
+              "currency": "USD"
+            },
+            "savings_percentage": 33,
+            "savings_amount": {
+              "amount": "50.0",
+              "currency": "USD"
+            },
+            "deal_badge": "33% off",
+            "type": "SINGLE_ITEM",
+            "product_asin": "B0BLS3QJTX"
+          }
+          ,
+          {
+            "deal_id": "66145a21",
+            "deal_type": "BEST_DEAL",
+            "deal_title": "All-new Amazon Fire HD 10 tablet, built for relaxation, 10.1",
+            "description":"vibrant Full HD screen, octa-core processor, 3 GB RAM, latest model (2023 release), 32 GB, Black",
+            "deal_photo": "https://m.media-amazon.com/images/I/61mmQjjSEeL.jpg",
+            "deal_state": "AVAILABLE",
+            "deal_url": "https://www.amazon.com/Amazon_Fire_HD_10/dp/B0BHZT5S12",
+            "canonical_deal_url": "https://www.amazon.com/deal/66145a21",
+            "deal_starts_at": "2024-05-05T16:00:00.000Z",
+            "deal_ends_at": "2024-05-28T04:00:00.000Z",
+            "deal_price": {
+              "amount": "94.99",
+              "currency": "USD"
+            },
+            "list_price": {
+              "amount": "139.99",
+              "currency": "USD"
+            },
+            "savings_percentage": 32,
+            "savings_amount": {
+              "amount": "45.0",
+              "currency": "USD"
+            },
+            "deal_badge": "32% off",
+            "type": "SINGLE_ITEM",
+            "product_asin": "B0BHZT5S12"
+          },
+          {
+            "deal_id": "a99633ae",
+            "deal_type": "BEST_DEAL",
+            "deal_title": "Echo Dot (5th Gen, 2022 release)",
+             "description":"With bigger vibrant sound, helpful routines and Alexa | Charcoal",
+            "deal_photo": "https://m.media-amazon.com/images/I/518cRYanpbL.jpg",
+            "deal_state": "AVAILABLE",
+            "deal_url": "https://www.amazon.com/All-New-release-Smart-speaker-Charcoal/dp/B09B8V1LZ3",
+            "canonical_deal_url": "https://www.amazon.com/deal/a99633ae",
+            "deal_starts_at": "2024-04-28T04:00:00.000Z",
+            "deal_ends_at": "2024-05-13T03:55:00.000Z",
+            "deal_price": {
+              "amount": "27.99",
+              "currency": "USD"
+            },
+            "list_price": {
+              "amount": "49.99",
+              "currency": "USD"
+            },
+            "savings_percentage": 44,
+            "savings_amount": {
+              "amount": "22.0",
+              "currency": "USD"
+            },
+            "deal_badge": "44% off",
+            "type": "SINGLE_ITEM",
+            "product_asin": "B09B8V1LZ3"
+          }
+          
+          
+
+    ]
+  }
+  
