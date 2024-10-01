@@ -1,11 +1,11 @@
 import { useContext, useState } from "react";
 import { useLocation } from "react-router-dom";
-import { CartContext } from "../sections/CartContext";
+import { ShopContext } from "./ShopContext";
 import added from "../assets/icons/checked.png";
 
 const ProductDetails = () => {
   const { state } = useLocation();
-  const { addToCart } = useContext(CartContext);
+  const { addToCart } = useContext(ShopContext);
   const [message, setMessage] = useState("");
   const product = state?.product;
 

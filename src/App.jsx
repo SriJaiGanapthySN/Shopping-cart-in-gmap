@@ -9,10 +9,13 @@ import TopDeals from './sections/TopDeals';
 import Smartphones from './sections/Smartphones';
 import Fashion from './sections/Fashion';
 import Shoes from './sections/Shoes';
-import { CartProvider } from './sections/CartContext';
+import { Provider } from './sections/ShopContext';
 import { navList } from './constants';
 import Cart from './sections/Cart';
 import ErrorBoundary from './Components/ErrorBoundary';
+import Login from './Components/Authentication/Login';
+import SingUp from './Components/Authentication/SignUp';
+import ErrorPage from './Components/ErrorPage';
 
 const Home = () => (
   <div>
@@ -40,27 +43,45 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout><Home /></Layout>,
+    errorElement: <ErrorPage />,
   },
   {
     path: "/searchresults",
-    element: <ErrorBoundary><Layout><Result /></Layout></ErrorBoundary>,
+    element: <Layout><Result /></Layout>,
     loader: searchLoader,
+    errorElement: <ErrorPage />,
   },
   {
     path: "/product/:id",
     element: <Layout><ProductDetails /></Layout>,
+    errorElement: <ErrorPage />,
   },
   {
     path: "/cart",
     element: <Layout><Cart /></Layout>,
+    errorElement: <ErrorPage />,
   },
+  {
+    path: "/login",
+    element: <Layout><Login /></Layout>,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/signup",
+    element: <Layout><SingUp /></Layout>,
+    errorElement: <ErrorPage />,
+  }
 ]);
+
 
 const App = () => {
   return (
-    <CartProvider>
-      <RouterProvider router={router} />
-    </CartProvider>
+    <Provider>
+      <ErrorBoundary>
+        <RouterProvider router={router} />
+      </ErrorBoundary>
+
+    </Provider>
   );
 };
 

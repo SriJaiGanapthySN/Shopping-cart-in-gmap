@@ -11,7 +11,7 @@ const Footer = () => {
     return (
         <footer className="bg-gray-800 text-white py-6">
             <div className="container mx-auto text-center">
-                <p className="text-lg mb-4">© 2024 Your Company Name. All rights reserved.</p>
+                <p className="text-lg mb-4">© ShopOn.in . All rights reserved.</p>
                 <div className="flex justify-center mb-4">
                     <a href="/about" className="mx-4 hover:underline">About Us</a>
                     <a href="/contact" className="mx-4 hover:underline">Contact</a>

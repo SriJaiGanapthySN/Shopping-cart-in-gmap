@@ -1,22 +1,25 @@
 import React, { createContext, useState } from "react";
 
-export const CartContext = createContext();
+export const ShopContext = createContext();
 
-export const CartProvider = ({ children }) => {
+
+export const Provider = ({ children }) => {
   const [cartItems, setCartItems] = useState([]);
+  const [user, setUser] = useState(false);
 
+  const handleUser = () => {
+    setUser(!user);
+  }
   const addToCart = (product) => {
     setCartItems((prevItems) => {
       const existingItemIndex = prevItems.findIndex(
         (item) => item.asin === product.asin
       );
       if (existingItemIndex > -1) {
-        // Increase the count of the existing item
         const updatedItems = [...prevItems];
         updatedItems[existingItemIndex].count++;
         return updatedItems;
       } else {
-        // Add new item with count 1
         console.log([...prevItems, { ...product, count: 1 }]);
         return [...prevItems, { ...product, count: 1 }];
       }
@@ -42,8 +45,8 @@ export const CartProvider = ({ children }) => {
   };
 
   return (
-    <CartContext.Provider value={{ cartItems, addToCart, removeFromCart }}>
+    <ShopContext.Provider value={{ cartItems, addToCart, removeFromCart, user, handleUser }}>
       {children}
-    </CartContext.Provider>
+    </ShopContext.Provider>
   );
 };

@@ -3,16 +3,15 @@ import { Link, useNavigate, useLocation, useNavigation } from 'react-router-dom'
 import Account from '../Components/Account';
 import cartIcon from '../assets/icons/shopping-cart.png';
 import searchIcon from '../assets/icons/search.svg';
-import { CartContext } from './CartContext';
+import { ShopContext } from './ShopContext';
 import LoadingScreen from '../Components/LoadingScreen';
 
 const Header = () => {
     const navigate = useNavigate();
     const location = useLocation();
     const [inputValue, setInputValue] = useState('');
-    const { cartItems } = useContext(CartContext);
+    const { cartItems, user } = useContext(ShopContext);
     const navigation = useNavigation();
-
 
     useEffect(() => {
         if (location.pathname === '/') {
@@ -33,21 +32,33 @@ const Header = () => {
     const handleInputChange = (e) => {
         setInputValue(e.target.value);
     };
+
+    const handleCartClick = () => {
+        if (!user) {
+            navigate('/login');
+        } else {
+            navigate('/cart');
+        }
+    };
+
     return (
         <header className="flex flex-col sm:flex-row items-center justify-between p-4 bg-white w-full xl:px-20">
             <div className="flex justify-between w-full sm:w-auto mb-4 sm:mb-0">
                 <Link to='/' className="lg:text-2xl text-xl font-bold text-blue-500 cursor-pointer">ShopOn</Link>
                 <div className="flex items-center gap-6 sm:hidden">
                     <Account />
-                    <Link to="/cart" className="relative flex justify-center items-center cursor-pointer gap-2">
+                    <div
+                        className="relative flex justify-center items-center cursor-pointer gap-2"
+                        onClick={handleCartClick}
+                    >
                         Cart
-                        <img src={cartIcon} className="w-8 " alt="Cart" />
+                        <img src={cartIcon} className="w-8" alt="Cart" />
                         {cartItems.length > 0 && (
                             <span className="absolute top-0 right-0 bg-blue-500 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center">
                                 {cartItems.length}
                             </span>
                         )}
-                    </Link>
+                    </div>
                 </div>
             </div>
 
@@ -69,15 +80,18 @@ const Header = () => {
 
             <div className="hidden sm:flex items-center gap-6">
                 <Account />
-                <Link to="/cart" className="relative flex justify-center items-center cursor-pointer gap-2">
+                <div
+                    className="relative flex justify-center items-center cursor-pointer gap-2"
+                    onClick={handleCartClick}
+                >
                     Cart
-                    <img src={cartIcon} className="w-8 " alt="Cart" />
+                    <img src={cartIcon} className="w-8" alt="Cart" />
                     {cartItems.length > 0 && (
                         <span className="absolute top-0 right-0 bg-blue-500 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center">
                             {cartItems.length}
                         </span>
                     )}
-                </Link>
+                </div>
             </div>
         </header>
     );
