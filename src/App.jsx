@@ -1,7 +1,7 @@
 import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Result, { loader as searchLoader } from './sections/Result';
-import ProductDetails from './sections/ProductDetails';
+import ProductDetails, { loader as productLoader } from './sections/ProductDetails';
 import Header from './sections/Header';
 import Nav from './sections/Nav';
 import Footer from './sections/Footer';
@@ -19,7 +19,7 @@ import ErrorPage from './Components/ErrorPage';
 
 const Home = () => (
   <div>
-    <Nav navList={navList} />
+    {/* <Nav navList={navList} /> */}
     <TopDeals />
     <Smartphones />
     <Fashion />
@@ -52,9 +52,11 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "/product/:id",
+    path: "/product/:asin",
     element: <Layout><ProductDetails /></Layout>,
+    loader: productLoader,
     errorElement: <ErrorPage />,
+
   },
   {
     path: "/cart",

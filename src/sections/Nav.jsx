@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom';
 import React from 'react';
 
 const Nav = ({ navList }) => {
@@ -13,6 +13,7 @@ const Nav = ({ navList }) => {
                             className="w-16 h-16 sm:w-20 sm:h-20 object-contain"
                         />
                         <p className="text-center text-sm sm:text-base mt-2 2xl:text-2xl">{nav.name}</p>
+                        <Link></Link>
                     </div>
                 ))}
             </div>

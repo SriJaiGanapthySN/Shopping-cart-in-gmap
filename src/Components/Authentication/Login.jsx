@@ -94,7 +94,7 @@ const Login = () => {
                 </div>
                 {message && <p className="text-red-500 text-center">{message}</p>}
                 <button onClick={signInWithGoogle} disabled={loading}>
-                    Sign In with Google'
+                    Sign In with Google
                 </button>
 
                 <button

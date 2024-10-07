@@ -1,5 +1,5 @@
 import React from "react";
-import { useLoaderData, useNavigation, useNavigate } from "react-router-dom";
+import { useLoaderData, useNavigation, useNavigate, Link } from "react-router-dom";
 import LoadingScreen from "../Components/LoadingScreen";
 import { searchApiKey } from "../constants";
 
@@ -21,6 +21,7 @@ export const loader = async ({ request }) => {
     const response = await fetch(url, options);
     if (response.status === 429) {
       throw new Error("Rate limit exceeded");
+
     }
     if (!response.ok) {
       throw new Error("API request failed");
@@ -60,17 +61,12 @@ export const loader = async ({ request }) => {
     }
   }
 
-  throw new Error("All API keys exhausted");
 };
 
 const Result = () => {
   const { searchResults } = useLoaderData();
   const navigation = useNavigation();
-  const navigate = useNavigate();
 
-  const handleViewProduct = (product) => {
-    navigate(`/product/${product.asin}`, { state: { product } });
-  };
 
   if (navigation.state === "loading") {
     return <LoadingScreen message="Searching for products..." />;
@@ -103,12 +99,12 @@ const Result = () => {
                 <p className="text-yellow-500 text-sm">
                   Rating: {result.product_star_rating}⭐
                 </p>
-                <button
-                  onClick={() => handleViewProduct(result)}
-                  className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors duration-200"
+                <Link
+                  to={`/product/${result.asin}`}
+                  className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors duration-200 inline-block"
                 >
                   View Product
-                </button>
+                </Link>
               </div>
             </div>
           ))}
