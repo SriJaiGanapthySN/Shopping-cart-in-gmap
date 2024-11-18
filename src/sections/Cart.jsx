@@ -1,10 +1,27 @@
-import { useContext } from 'react';
+import { useContext,useState } from 'react';
 import { ShopContext } from './ShopContext';
 import { useNavigate } from 'react-router-dom';
+import MapModal from '../Components/Mapcompenent';
 
 const Cart = () => {
     const { cartItems, removeFromCart } = useContext(ShopContext);
     const navigate = useNavigate();
+
+    const [isMapOpen, setIsMapOpen] = useState(false);
+  const [location, setLocation] = useState(null);
+
+  const handleButtonClick = () => {
+    setIsMapOpen(true);
+  };
+
+  const handleLocationSelect = (placeName) => {
+    setLocation(placeName);
+    setIsMapOpen(false); // Close map after selecting
+  };
+
+  const handleCloseMap = () => {
+    setIsMapOpen(false);
+  };
 
     const handleViewProduct = (product) => {
         console.log(product);
@@ -35,12 +52,27 @@ const Cart = () => {
                                     Remove
                                 </button>
                             </div>
+                            <div className="flex items-center justify-center min-h-screen bg-gray-100">
+      <button
+        onClick={handleButtonClick}
+        className="bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+      >
+        {location ? `Selected: ${location}` : 'Select Location'}
+      </button>
+      <MapModal
+        isOpen={isMapOpen}
+        onClose={handleCloseMap}
+        onLocationSelect={handleLocationSelect}
+      />
+      </div>
                         </div>
                     ))}
                 </div>
             ) : (
                 <p className='w-screen text-center'>Your cart is empty.</p>
             )}
+     
+            
         </div>
     );
 };

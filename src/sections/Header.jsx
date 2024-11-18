@@ -62,9 +62,9 @@ const Header = () => {
                 </div>
             </div>
 
-            <div className="relative flex-1 max-w-xl mx-4 w-full sm:w-auto">
+            <div className="relative flex-1 max-w-xl mx-5 w-full sm:w-auto">
                 <input
-                    className="border border-blue-200 bg-blue-50 rounded-lg w-full h-10 pl-12 pr-3 xl:w-[800px] focus:outline-none"
+                    className="border border-blue-200 bg-blue-50 rounded-lg w-full h-10 pl-12 pr-3 xl:w-[700px] focus:outline-none"
                     type="text"
                     value={inputValue}
                     onChange={handleInputChange}
